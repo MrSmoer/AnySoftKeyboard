@@ -13,6 +13,12 @@ on:
       - deployment/halt_deployment_marker
     branches:
       - '*'
+  workflow_dispatch:
+    inputs:
+      input:
+        description: "Test"
+        required: false
+        default: "World"
 
 env:
   TERM: dumb
